@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow
+        android:id="@+id/fila1"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:background="#A8A8A8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/colCodigo"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Codigo"
+            android:textAlignment="center"
+            android:textColor="#292929"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText,TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/colNombre"
+            android:layout_width="470dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingRight="1dp"
+            android:text="Nombre Producto"
+            android:textAlignment="center"
+            android:textColor="#292929"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText,TextSizeCheck,VisualLintBounds" />
+
+        <TextView
+            android:id="@+id/colCategoria"
+            android:layout_width="420dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingEnd="2dp"
+            android:text="Categoria"
+            android:textAlignment="center"
+            android:textColor="#292929"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText,TextSizeCheck" />
+
+        <CheckBox
+            android:id="@+id/colNecesario"
+            android:layout_width="450dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Necesario"
+            android:textAlignment="viewStart"
+            android:textColor="#292929"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText,TouchTargetSizeCheck,VisualLintButtonSize" />
+    </TableRow>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
